@@ -1,0 +1,14 @@
+{ 
+  head: { text: 'APB', tick: 0 },
+  config: { hscale: 1 },
+  signal: [
+    { name: 'PCLK',    wave: 'p...|...'},
+    { name: 'PSEL',    wave: '01.x|1.2'},
+    { name: 'PADDR',   wave: 'x3.x|5.x', data: ['A1','A2']},
+    { name: 'PWRITE',  wave: '21.x|0.2'},
+    { name: 'PWDATA',  wave: 'x3.x|x..', data: 'D1'   },
+    { name: 'PENABLE', wave: '201x|012'},
+    { name: 'PRDATA',  wave: 'x..x|.5x', data: 'Q2'},
+    { name: 'Cycle',   wave: 'x=.x|=.x', data: [ 'Write', 'Read' ] }
+  ],
+}
